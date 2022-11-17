@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Netbook2 || Home</title>
+
+
+        <!-- Panggil Tailwind -->
+        <link rel="stylesheet" href="./src/output.css" />
+
+        <!-- Panggil icon -->
+        <link rel="icon" href="./assets/icon/icon.png" type="x-icon/image" />
+    </head>
+    <body>
+
+
+        <!-- ===== Start Navbar ===== -->
+        <nav id="Navbar" class="w-full border border-b-cyan-200">
+
+            <div class="container mx-auto flex flex-wrap lg:flex-nowrap
+                justify-between m-5 items-center my-[18px] gap-20 lg:gap-[70px]
+                px-5">
+
+                <div class="logo">
+                    <a href="">
+                        <img src="./assets/icon/logo.png" alt="logo.png" />
+                    </a>
+                </div>
+
+                <!-- ===== tart Menu Toggle ====== -->
+                <button data-collapse-toggle="navbar-default" type="button"
+                    class="inline-flex items-center p-2 ml-3 text-sm
+                    text-gray-500 rounded-lg lg:hidden hover:bg-gray-100
+                    focus:outline-none focus:ring-2 focus:ring-gray-200
+                    dark:text-gray-400 dark:hover:bg-gray-700
+                    dark:focus:ring-gray-600" aria-controls="navbar-default"
+                    aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor"
+                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path
+                            fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110
+                            2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110
+                            2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110
+                            2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                </button>
+                <!-- ====== End Menu Toggle ===== -->
+
+                <div id="navbar-default" class="hidden lg:block w-full">
+
+                    <div class="flex flex-col md:flex-row items-center
+                        justify-between gap-8">
+
+                        <!-- ===== Start Menu Left ===== -->
+                        <div class="menu-navigation flex items-center">
+                            <ul class="flex flex-col md:flex-row item-center
+                                text-center gap-3">
+                                <li>
+                                    <a href="" class="active">Home</a>
+                                </li>
+                                <li>
+                                    <div class="item-dropdown flex gap-[5px]">
+                                        <a href="#!">Community</a>
+                                        <img
+                                            src="./assets/icon/CaretDown.png"
+                                            class="object-contain"
+                                            alt=""
+                                            />
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="">Events</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- ===== End Menu Left ===== -->
+
+                        <!-- ===== Start Right ===== -->
+                        <div class="menu-action flex flex-col md:flex-row">
+                            <div class="search-box flex flex-col relative
+                                items-center gap-5">
+                                <img src="./assets/icon/Search.png" alt=""
+                                    class="absolute inset-y-0 my-auto"/>
+                                <form action="#!" class="flex gap-[42px]">
+                                    <input type="text" placeholder="Search here"
+                                        class="pl-5 w-[115px] bg-transparent
+                                        border-none" />
+                                    <button
+                                        type="button"
+                                        class="inline-block px-7 py-3
+                                        bg-blue-600
+                                        text-white
+                                        font-medium text-sm leading-snug
+                                        uppercase
+                                        rounded-xl shadow-md
+                                        hover:bg-blue-700 hover:shadow-lg
+                                        focus:bg-blue-700
+                                        focus:shadow-lg focus:outline-none
+                                        focus:ring-0
+                                        active:bg-blue-800 active:shadow-lg
+                                        transition
+                                        duration-150
+                                        ease-in-out ">
+                                        Login
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- ===== End Right ===== -->
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- ===== End Navbar ===== -->
+
+        <!-- ===== Start Hero ===== -->
+        <section id="Hero" class="pt-[125px] pb-[82.5px] bg-gradient-to-br
+            from-white to-[#D4E7FE]">
+            <div class="container flex flex-wrap-reverse lg:flex-nowrap px-5
+                items-center justify-center lg:justify-between font-inter
+                md:justify-center">
+                <div class="box-title">
+                    <button class="bg-cyan-200 py-3 px-[30px] text-blue-700
+                        font-medium rounded-lg mt-10 block mx-auto
+                        lg:inline-block lg:mt-[50px]">Netbook Community</button>
+                    <h1 class="text-[36px] font-bold pb-2
+                        leading-[48px] pt-[20px] text-center lg:text-left
+                        lg:text-[56px] lg:leading-[68px] lg:pb-[18px]">Your
+                        Solutions For Community!</h1>
+                    <p class="text-lg py-10 text-center lg:text-left
+                        lg:py[42px]">More than 2 billion people
+                        in
+                        over countries use socibook to stay in touch with
+                        friends & family.</p>
+                    <div class="action gap-6 flex justify-center lg:block">
+                        <buttton class="bg-blue-500 hover:bg-blue-400
+                            text-white py-3 px-5
+                            lg:py-[24px] lg:px-[42px] rounded-[14px]">About More</buttton>
+                        <button class="text-blue-600 border border-cyan-500
+                            hover:bg-blue-400 py-3 px-5 hover:text-stone-200
+                            lg:py-[24px]
+                            lg:px-[42px] lg:ml-[18px] rounded-[14px]">Invite
+                            Friend</button>
+                    </div>
+                </div>
+                <div class="image-hero ">
+                    <img src="./assets/icon/ImageHero.png" alt="ImageHero">
+                </div>
+            </div>
+        </section>
+        <!-- ===== End Hero ===== -->
+
+        <!-- ===== Start Survey ===== -->
+        <section id="Survey">
+            <div class="container px-[20px] block justify-center
+                lg:justify-between lg:pt-[96px] lg:pb-[21px] lg:flex">
+                <div class="box-title justify-center text-center lg:text-left
+                    lg:w-[35%]">
+                    <p class="pt-[96.53px] text-blue-600">Whats Netboks?</p>
+                    <h2 class="text-2xl font-inter font-semibold lg:font-inter
+                        lg:text-4xl lg:leading-[48px] lg:font-bold">
+                        Why Join to Netbook Social Network?
+                    </h2>
+                    <p class="pt-4 text-[#656464] text-base font-inter
+                        mb-9">Recent
+                        surveys have indicated that small businesses
+                        recognise
+                        the need they have to connect with consumer.</span>
+                    <ul class="font-inter text-[18px]">
+                        <li class="flex gap-3"><img
+                                src="./assets/icon/ul.png"
+                                alt=""> Group</li>
+                        <li class="flex gap-3"><img
+                                src="./assets/icon/ul.png"
+                                alt=""> Messages</li>
+                        <li class="flex gap-3"><img
+                                src="./assets/icon/ul.png"
+                                alt=""> Share</li>
+                    </ul>
+                </div>
+                <div class="flex pt-[6px] gap-6 lg:pt-[36px]">
+                    <div class="pt-[55px] lg:pt-[75px]">
+                        <img src="./assets/Image.png" alt="">
+                    </div>
+                    <div class=" gap-8 flex flex-col mb-[34px]">
+                        <img src="./assets/Image2.png" alt="">
+                        <img src="./assets/Image3.png" alt="" class="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===== End Survey ===== -->
+
+        <!-- ===== Start Achievement ===== -->
+        <section id="Achievement">
+            <div class="container px-[20px]">
+                <div class="box-contain lg:flex gap-8 pt-[75px] mb-[84px]">
+                    <div class="contain block lg:flex gap-8">
+                        <div class="card w-fit mx-auto font-inter">
+                            <div class="shadow shadow-gray-400 pl-11 pt-10
+                                rounded-[14px]">
+                                <div class="flex gap-5">
+                                    <img src="./assets/icon/Star.png"
+                                        alt="">
+                                    <p class="text-[20px] font-inter
+                                        font-medium
+                                        items-center">4.8 Rating</p>
+                                </div>
+                                <div class="flex gap-5 items-center pt-8
+                                    font-inter pb-[40px]">
+                                    <img src="./assets/icon/profile1.png"
+                                        alt="">
+                                    <img src="./assets/icon/profile2.png"
+                                        alt="" class="ml-[-28px]">
+                                    <img src="./assets/icon/profile3.png"
+                                        alt="" class="ml-[-28px]">
+                                    <p class="text-blue-500 font-semibold">+836k
+                                        <span class="text-gray-600">Members</span></p>
+                                </div>
+                                <p class="text-gray-400 w-[270px]
+                                    pr-[18px]">More
+                                    than 2 billion we people over countries
+                                    use
+                                    socibooks we to stay in touch with
+                                    friends.</p>
+                                <a href="" class="flex gap-3 text-blue-500
+                                    hover:text-blue-700 font-inter
+                                    font-semibold
+                                    my-10 pb-9">Join Our Community <img
+                                        src="./assets/icon/ArrowRight.png"
+                                        alt="" class="inset-y-0 my-auto
+                                        items-center"></a>
+                            </div>
+                        </div>
+                        <div class="card w-fit mx-auto font-inter">
+                            <div class="shadow shadow-gray-400 pl-11 pt-10
+                                rounded-[14px]">
+                                <div class="flex gap-5">
+                                    <img src="./assets/icon/Trophy.png"
+                                        alt="">
+                                    <p class="text-[20px] font-inter
+                                        font-medium
+                                        items-center">Awwwards</p>
+                                </div>
+                                <div class="flex gap-5 items-center pt-8
+                                    font-inter pb-[40px]">
+                                    <img src="./assets/icon/Git.png"
+                                        alt="">
+                                    <p class="text-gray-600">Best of <span
+                                            class=" text-blue-500
+                                            font-semibold">2021</span> On
+                                        Github</p>
+                                </div>
+                                <p class="text-gray-400 w-[270px]
+                                    pr-[18px]">More than 2 billion we people
+                                    over countries use socibooks we to stay
+                                    in touch with friends.
+                                </p>
+                                <a href="" class="flex gap-3 text-gray-500
+                                    hover:text-gray-700 font-inter
+                                    font-semibold my-10 pb-9">Go To Awards
+                                    <img
+                                        src="./assets/icon/ArrowRightgray.png"
+                                        alt="" class="inset-y-0 my-auto
+                                        items-center">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card lg:w-[520px]">
+                        <div class="px-8 pl-11 pt-2 text-center lg:text-left">
+                            <div class="gap-5 font-inter">
+                                <p class="text-base lg:text-lg lg:text-left
+                                    text-blue-600">Our
+                                    Achievement</p>
+                                <h2 class="text-2xl lg:text-4xl lg:text-left
+                                    lg:w-96 font-semibold
+                                    pb-[18px] lg:pt-4">We are Connecting You The
+                                    Digital
+                                    Life.</h2>
+                                <p class="text-gray-400 pt-3 lg:w-[270px]
+                                    lg:pr-[18px] lg:pb-[38px]">The scope the
+                                    Social
+                                    Media
+                                    becomes crucial Is helps the business to
+                                    directly engage with their needs and
+                                    wants.
+                                </p>
+                                <a href="" class=" flex gap-3 bg-blue-600 mt-4
+                                    hover:bg-blue-800 text-white items-center
+                                    w-[160px] pl-[24px] py-[18px] lg:py-[22px]
+                                    lg:pl-[38px] lg:w-48 lg:m-0 rounded-[14px]">Discover
+                                    me
+                                    <img
+                                        src="./assets/icon/ArrowRightwhite.png"
+                                        alt="" class="inset-y-0 my-auto
+                                        items-center">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===== End Achievement ===== -->
+
+        <!-- ===== Start Community ===== -->
+        <section id="Community" class="bg-[#F1F6FD] pb-[46px]">
+            <div class="container pt-[55px] px-[20px]">
+                <div class="card mt-[30ox] lg:mt-[60px] text-center font-inter">
+                    <p class="text-blue-600 text-lg font-medium">Our
+                        Community</p>
+                    <h2 class="text-2xl font-inter font-semibold lg:font-inter
+                        lg:text-4xl lg:leading-[48px] lg:font-bold">Community
+                        Main Feature</h2>
+                    <p class="lg:text-lg mt-[19px] font-normal font-inter
+                        mx-[510px[ mb-16">The wise man therefore always
+                        holds in
+                        these matters <br> to this principle of selection.</p>
+                </div>
+                <div class="grup block lg:flex lg:gap-8">
+                    <div class="card w-fit mb-10 lg:mb-0 bg-white gap-8 flex flex-1 lg:w-64
+                        pt-8 lg:pt-10
+                        rounded-[14px]">
+                        <div class="pl-5 lg:pl-10">
+                            <img src="./assets/icon/Member.png" alt="">
+                        </div>
+                        <div class="block">
+                            <h3 class=" text-2xl font-inter font-semibold">Members,
+                                Friends</h3>
+                            <p class="pt-3.5 text-[#656464] text-base
+                                pr-[65px]
+                                pb-11 font-inter font-normal">Members,
+                                Friends
+                                Connection ( like followers ),
+                                Private Message</p>
+                        </div>
+                    </div>
+
+                    <div class="card w-fit bg-white gap-8 flex flex-1 lg:w-64
+                        pt-8 lg:pt-10
+                        rounded-[14px]">
+                        <div class="pl-5 lg:pl-10">
+                            <img src="./assets/icon/Group.png" alt="">
+                        </div>
+                        <div class="block">
+                            <h3 class=" text-2xl font-inter font-semibold">Groups</h3>
+                            <p class="pt-3.5 text-[#656464] text-base
+                                pr-[65px]
+                                pb-11 font-inter font-normal">Your users can
+                                create groups to let other users to join and
+                                talk</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grup inline-block lg:flex gap-8 my-11">
+                    <div class="card w-fit mb-10 lg:mb-0 bg-white gap-8 flex flex-1 lg:w-64
+                        pt-8 lg:pt-10
+                        rounded-[14px]">
+                        <div class="pl-10">
+                            <img src="./assets/icon/IconForum.png" alt="">
+                        </div>
+                        <div class="block">
+                            <h3 class=" text-2xl font-inter font-semibold">Forum</h3>
+                            <p class="pt-3.5 text-[#656464] text-base
+                                pr-[65px]
+                                pb-11 font-inter font-normal">Forum is ready
+                                by
+                                BBPress. Your users can make topics and
+                                talk.</p>
+                        </div>
+                    </div>
+                    <div class="card w-fit bg-white gap-8 flex flex-1 lg:w-64
+                        pt-8 lg:pt-10
+                        rounded-[14px]">
+                        <div class="pl-10">
+                            <img src="./assets/icon/IconCosModel.png"
+                                alt="">
+                        </div>
+                        <div class="block">
+                            <h3 class=" text-2xl font-inter font-semibold">Custom
+                                Module</h3>
+                            <p class="pt-3.5 text-[#656464] text-base
+                                pr-[65px]
+                                pb-11 font-inter font-normal">You can create
+                                Members, Groups Module. We already created 3
+                                modules. It's by drag & drop live builder.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grup inline-block lg:flex gap-8 ">
+                    <div class="card w-fit mb-10 lg:mb-0 bg-white gap-8 flex flex-1 lg:w-64
+                        pt-8 lg:pt-10
+                        rounded-[14px]">
+                        <div class="pl-10">
+                            <img src="./assets/icon/IconListBuilder.png" alt="">
+                        </div>
+                        <div class="block">
+                            <h3 class=" text-2xl font-inter font-semibold">List
+                                Builder</h3>
+                            <p class="pt-3.5 text-[#656464] text-base
+                                pr-[65px]
+                                pb-11 font-inter font-normal">Members, Groups
+                                list can be modified by drag & drop live
+                                builder.</p>
+                        </div>
+                    </div>
+                    <div class="card w-fit bg-white gap-8 flex flex-1 lg:w-64
+                        pt-8 lg:pt-10
+                        rounded-[14px]">
+                        <div class="pl-10">
+                            <img src="./assets/icon/IconLisScrEffects.png"
+                                alt="">
+                        </div>
+                        <div class="block">
+                            <h3 class=" text-2xl font-inter font-semibold">List
+                                Scroll Effects</h3>
+                            <p class="pt-3.5 text-[#656464] text-base
+                                pr-[65px]
+                                pb-11 font-inter font-normal">8 different scroll
+                                effects are ready.
+                                You can always change by your tastes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===== End Community ===== -->
+
+        <!-- ===== Start Member ===== -->
+        <section id="Member" class="bg-[#F1F6FD] mb-12.5">
+            <div class="container pt-[46px] px-[20px]">
+                <div class="card mt-[30px] lg:mt-[60px] lg:w-full text-center font-inter">
+                    <p class="text-blue-600 text-lg font-medium">Valuable
+                        Team</p>
+                    <h2 class="text-2xl font-inter font-semibold lg:font-inter
+                    lg:text-4xl lg:leading-[48px] lg:font-bold">Our Active Members</h2>
+                    <p class="text-lg mb-8 font-normal font-inter
+                        lg:mx-[210px] lg:mb-16">when an unknown printer took a
+                        galley of type and meeting fari scrambled
+                        it
+                    </p>
+                </div>
+                <div class="menu mb-5 p-1 w-fit gap-14 mx-auto flex lg:gap-24 lg:p-2 lg:mb-11
+                    text-base font-inter font-medium bg-sky-100
+                    rounded-[14px]">
+                    <div class="py-3 lg:py-7 pl-[24px] lg:pl-[58px]">
+                        <a href=""> Newst</a>
+                    </div>
+                    <div class="py-3 lg:py-7">
+                        <a href="">
+                            Popular
+                        </a>
+                    </div>
+                    <div class="py-3 lg:py-7 bg-blue-500 px-[25px] lg:px-[50px] text-white
+                        text-center rounded-[14px]">
+                        <a href=""> Active</a>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center lg:flex-row gap-6 pb-21 justify-center">
+                    <div class="hover:bg-slate-50 duration-[0.8s] w-fit
+                        px-[52px] pt-[35px] rounded-[14px] relative">
+                        <img src="./assets/icon/Abstrack.png" alt=""
+                            class="mb-[30px]">
+                        <img src="./assets/icon/Fahim.png" alt=""
+                            class="absolute top-11 left-0 right-0
+                            m-auto">
+                        <img src="./assets/icon/Check.png" alt=""
+                            class="absolute inset-x-0 top-[180px]
+                            mx-auto
+                            mt-auto">
+                        <h3 class="text-[#2F2C4A] font-semibold
+                            font-inter
+                            text-2xl text-center">Fahim Rahman</h3>
+                        <p class="text-base font-inter text-center
+                            mb-[30px]">@rahman</p>
+                    </div>
+                    <div class="hover:bg-slate-50 duration-[0.8s] w-fit
+                        px-[52px] pt-[35px] rounded-[14px] relative">
+                        <img src="./assets/icon/Abstrack.png" alt=""
+                            class="mb-[30px]">
+                        <img src="./assets/icon/Kazi.png" alt=""
+                            class="absolute top-11 left-0 right-0
+                            m-auto">
+                        <img src="./assets/icon/Check.png" alt=""
+                            class="absolute inset-x-0 top-[180px]
+                            mx-auto
+                            mt-auto">
+                        <h3 class="text-[#2F2C4A] font-semibold
+                            font-inter
+                            text-2xl text-center">Kazi Rahman</h3>
+                        <p class="text-base font-inter text-center
+                            mb-[30px]">@Rahman</p>
+                    </div>
+                    <div class="hover:bg-slate-50 duration-[0.8s] w-fit
+                        px-[52px] pt-[35px] rounded-[14px] relative">
+                        <img src="./assets/icon/Abstrack.png" alt=""
+                            class="mb-[30px]">
+                        <img src="./assets/icon/Masterero.png" alt=""
+                            class="absolute top-9 left-0 right-0
+                            m-auto">
+                        <img src="./assets/icon/Check.png" alt=""
+                            class="absolute inset-x-0 top-[180px]
+                            mx-auto
+                            mt-auto">
+                        <h3 class="text-[#2F2C4A] font-semibold
+                            font-inter
+                            text-2xl text-center">Masterero Ali</h3>
+                        <p class="text-base font-inter text-center
+                            mb-[30px]">@Master</p>
+                    </div>
+                    <div class="hover:bg-slate-50 duration-[0.8s] w-fit
+                        px-[52px] pt-[35px] rounded-[14px] relative">
+                        <img src="./assets/icon/Abstrack.png" alt=""
+                            class="mb-[30px]">
+                        <img src="./assets/icon/Alia.png" alt=""
+                            class="absolute top-9 left-0 right-0
+                            m-auto">
+                        <img src="./assets/icon/Check.png" alt=""
+                            class="absolute inset-x-0 top-[180px]
+                            mx-auto
+                            mt-auto">
+                        <h3 class="text-[#2F2C4A] font-semibold
+                            font-inter
+                            text-2xl text-center">Alia Karon</h3>
+                        <p class="text-base font-inter text-center
+                            mb-[30px]">@Alia</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===== End Member ===== -->
+
+        <!-- ===== Start Application ===== -->
+        <section id="Application" class="bg-blue-100">
+            <div class="container px-[20px] flex-wrap-reverse lg:flex lg;flex-nowrap lg:justify-between">
+                <div class="card">
+                    <div class="w-fit lg:w-[360px] mb-9 text-center lg:text-left">
+                        <p class="pt-10 lg:pt-30.5 mb-2.5 font-inter text-medium
+                            text-blue-600">Get Our Aplication</p>
+                        <h3 class="text-4xl font-inter font-semibold
+                            mb-4.5
+                            text-[#0A093D]">You Can Easily Find
+                            This App…!
+                        </h3>
+                        <p class="text-[#656464] font-inter lg:w-[325px]">I
+                            say
+                            chap that’s suing lavatory chip shop gosh
+                            off his
+                            smashing boot are you taking the piss posh
+                            loo
+                            brilliant.
+                        </p>
+                    </div>
+                    <div class="flex gap-5 justify-center lg:justify-start">
+                        <img src="./assets/icon/appstore.png" alt="">
+                        <img src="./assets/icon/playstore.png" alt="">
+                    </div>
+                </div>
+                <div class="mockup justify-center mt-20 ">
+                    <img src="./assets/icon/mobile muckup.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- ===== End Application ===== -->
+
+        <!-- ===== Start Lates News ===== -->
+        <section id="Lates-News">
+            <div class="container px-[20px] flex-wrap-reverse lg:flex lg;flex-nowrap lg:justify-between">
+                <div class="w-fit lg:w-[360px] mb-9 text-center lg:text-left">
+                    <p class="pt-10 lg:pt-30.5 mb-2.5 font-inter text-medium
+                        text-blue-600">Get Our Aplication</p>
+                    <h3 class="text-4xl font-inter font-semibold
+                        mb-4.5
+                        text-[#0A093D]">Latest News
+                    </h3>
+                    <p class="text-[#656464] font-inter lg:w-[325px]">I
+                        say
+                        chap that’s suing lavatory chip shop gosh
+                        off his
+                        smashing boot are you taking the piss posh
+                        loo
+                        brilliant.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- ===== End Lates News ===== -->
+
+
+        <!-- <script src="..flowbite/dist/flowbite.js"></script> -->
+        <script src="./node_modules/flowbite/dist/flowbite.js"></script>
+    </body>
+</html>
